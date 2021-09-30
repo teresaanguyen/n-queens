@@ -219,7 +219,7 @@
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
       var board = this.rows();
-      var extendedColumnLength = 2 * (board.length);
+      var extendedColumnLength = 2 * (board.length) - 1;
       for (var i = 0; i < extendedColumnLength; i++) {
         if (this.hasMinorDiagonalConflictAt(i)) {
           return true;
